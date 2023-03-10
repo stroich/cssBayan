@@ -37,6 +37,7 @@ li{
 .meme{
     border-top: 1px solid #a7a7a7;
     border-bottom: 1px solid #a7a7a7;
+    padding: 7px 0;
 }
 .meme-input{
     display: none;
@@ -59,9 +60,10 @@ li{
     transition: .5s;
 }
 .meme-img{
+    display: block;
     height: 0;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.9s;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -77,7 +79,6 @@ li{
     height: auto;
     padding: 15%;
     width: auto;
-    margin: 5px auto;
 }
 .accordion:hover{
     cursor: pointer;
@@ -90,6 +91,24 @@ li{
     width: 20px;
     height: 20px;
 }
+.meme:hover > .meme-label .meme-label-span{
+    transform: none;
+}
+.meme:hover > .meme-img{
+    height: auto;
+    padding: 15%;
+    width: auto;
+    cursor: pointer;
+}
+.meme:active > .meme-label{
+    opacity: 0.5;
+    cursor: url("assets/cursorActive.png"), pointer;
+}
+.meme:active > .meme-img{
+    opacity: 0.5;
+    cursor: url("assets/cursorActive.png"), pointer;
+}
+
 .cat-meme1{
     background-image: url("assets/cat-meme1.jpg");
 }
