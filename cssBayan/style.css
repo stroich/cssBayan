@@ -7,11 +7,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: hidden;
+    overflow-y: scroll;
     background-color: beige;
-}
-html {
-    scroll-behavior: smooth;
 }
 li{
     list-style: none;
@@ -33,13 +30,13 @@ li{
 .header-container{
     display: flex;
     align-items: center;
+    border-bottom:  solid #a7a7a7;
 }
 .title{
     font-size: 2em;
 }
 .meme{
-    border-top: 1px solid #a7a7a7;
-    border-bottom: 1px solid #a7a7a7;
+    border-bottom:  solid #a7a7a7;
     padding: 2% 0;
 }
 .meme-input{
@@ -90,8 +87,8 @@ li{
     cursor: pointer;
 }
 .accordion:hover .meme-label .meme-label-span {
-    width: 20px;
-    height: 20px;
+    width: 1em;
+    height: 1em;
 }
 .meme:hover > .meme-label .meme-label-span{
     transform: none;
