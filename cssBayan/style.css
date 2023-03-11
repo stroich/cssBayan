@@ -79,26 +79,6 @@ li{
     padding: 15%;
     width: auto;
 }
-.accordion:hover{
-    cursor: pointer;
-}
-.accordion:hover .meme-label {
-    color: black;
-    cursor: pointer;
-}
-.accordion:hover .meme-label .meme-label-span {
-    width: 1em;
-    height: 1em;
-}
-.meme:hover > .meme-label .meme-label-span{
-    transform: none;
-}
-.meme:hover > .meme-img{
-    height: auto;
-    padding: 15%;
-    width: auto;
-    cursor: pointer;
-}
 .meme:active > .meme-label{
     opacity: 0.5;
     cursor: url("assets/cursorActive.png"), pointer;
@@ -122,6 +102,28 @@ li{
 .cat-meme5{
     background-image: url("assets/cat-meme5.jpg");
 }
+@media (hover: hover) and (pointer: fine){
+    .accordion:hover{
+        cursor: pointer;
+    }
+    .accordion:hover .meme-label {
+        color: black;
+        cursor: pointer;
+    }
+    .accordion:hover .meme-label .meme-label-span {
+        width: 1em;
+        height: 1em;
+    }
+    .meme:hover > .meme-label .meme-label-span{
+        transform: none;
+    }
+    .meme:hover > .meme-img{
+        height: auto;
+        padding: 15%;
+        width: auto;
+        cursor: pointer;
+    }
+}
 @media (max-width: 820px){
     .header{
         height: 10vh;
@@ -137,26 +139,6 @@ li{
     }
     .meme-label{
         font-size: 1.2em;
-    }
-    .accordion:hover .meme-label {
-        color: #b36c38;
-    }
-    .accordion:hover .meme-label .meme-label-span {
-        width: 0;
-        height: 0;
-    }
-    .meme-input:checked ~ .meme-label{
-        color: black;
-    }
-    .meme:hover > .meme-img{
-        height: 0;
-        padding: 0;
-        width: 0;
-    }
-    .meme-input:checked ~ .meme-img{
-        height: auto;
-        padding: 15%;
-        width: auto;
     }
 }
 @media (max-width: 320px){
